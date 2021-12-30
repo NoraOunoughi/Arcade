@@ -1,0 +1,10 @@
+\hypertarget{index_Documentation}{}\doxysection{Documentation}\label{index_Documentation}
+Arcade is a gaming platform\+: a program that lets the user choose a game to play and keeps a register of player scores. To be able to deal with the elements of your gaming plate-\/form at run-\/time, your graphics libraries and your games implemented as dynamic libraries, loaded at run-\/time. Each GUI available for the program is used as a shared library that will be loaded and used dynamically by the main program.~\newline
+~\newline
+ Dynamic libraries\+:~\newline
+ The program uses dynamic libraries at run-\/time. This means that the progam uses the dlopen, dlclose, dlsym an ddl error functions to handle your dynamic libraries These dynamic libraries can be seen as plug-\/ins providing various capabilities to your main program. In NO CASE graphics libraries influence the game logic. Game libraries don\textquotesingle{}t contain any information about screen rendering or low-\/level events. Your libraries (games and graphics) binaries ($\ast$.so) are in the./lib/directory at the root of your repository.~\newline
+~\newline
+ Usage\+:~\newline
+ The program takes a startup argument the graphics library to use initially. It\textquotesingle{}s possible to change the graphics library at run-\/time.~\newline
+~\newline
+ Language\+: C++ 

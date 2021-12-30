@@ -1,0 +1,125 @@
+\hypertarget{classgame_1_1Pacman}{}\doxysection{game\+::Pacman Class Reference}
+\label{classgame_1_1Pacman}\index{game::Pacman@{game::Pacman}}
+Inheritance diagram for game\+::Pacman\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgame_1_1Pacman}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgame_1_1Pacman_a0fc23bdf54a2f615ada63382f8d4ca68}\label{classgame_1_1Pacman_a0fc23bdf54a2f615ada63382f8d4ca68}} 
+void \mbox{\hyperlink{classgame_1_1Pacman_a0fc23bdf54a2f615ada63382f8d4ca68}{Create\+Map}} ()
+\begin{DoxyCompactList}\small\item\em setup the map from a .txt \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgame_1_1Pacman_ada03ebf55dfba18f3ff271fe7c14c938}{get\+Input}} (const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classarcade_1_1Inputs}{arcade\+::\+Inputs}} $>$ \&input)
+\begin{DoxyCompactList}\small\item\em manage input of the game \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classgame_1_1Pacman_a6d5dd3578085cca6d4c18a173926c805}{Check\+Collision}} (arcade\+::\+Inputs\+::input input)
+\begin{DoxyCompactList}\small\item\em check collision of the player \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgame_1_1Pacman_a1a75786c04b5414e80dcf85556351336}\label{classgame_1_1Pacman_a1a75786c04b5414e80dcf85556351336}} 
+void \mbox{\hyperlink{classgame_1_1Pacman_a1a75786c04b5414e80dcf85556351336}{End\+Game}} ()
+\begin{DoxyCompactList}\small\item\em lose conditions \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgame_1_1Pacman_a165ae4289bdde4bc13aa5930b754e9fb}\label{classgame_1_1Pacman_a165ae4289bdde4bc13aa5930b754e9fb}} 
+void \mbox{\hyperlink{classgame_1_1Pacman_a165ae4289bdde4bc13aa5930b754e9fb}{move\+Enemy}} ()
+\begin{DoxyCompactList}\small\item\em move the phantom \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classgame_1_1Pacman_a7459a729a854bd6220994c6474df72a1}{Check\+Collision\+Enemy}} (char c, long unsigned int y)
+\begin{DoxyCompactList}\small\item\em check collision of the phatom \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgame_1_1Pacman_a8ccfedfb743743b1c3cb22483b97d9e1}\label{classgame_1_1Pacman_a8ccfedfb743743b1c3cb22483b97d9e1}} 
+std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classarcade_1_1Assets}{arcade\+::\+Assets}} $>$ $>$ \& \mbox{\hyperlink{classgame_1_1Pacman_a8ccfedfb743743b1c3cb22483b97d9e1}{getasset}} ()
+\begin{DoxyCompactList}\small\item\em return the list of asset \end{DoxyCompactList}\item 
+std\+::tuple$<$ int, int $>$ \mbox{\hyperlink{classgame_1_1Pacman_aacd887dfe7dd7e90f6ec65d5fc8be440}{getcharacter}} (char c)
+\begin{DoxyCompactList}\small\item\em return the position of a character in the map \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgame_1_1Pacman_a30067ad11d2acec8e1342a258305f5ce}{setlist}} (std\+::string name, std\+::tuple$<$ int, int $>$ pos, std\+::tuple$<$ int, int $>$ size, std\+::string path)
+\begin{DoxyCompactList}\small\item\em add a new element in the list \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgame_1_1Pacman_a6d5dd3578085cca6d4c18a173926c805}\label{classgame_1_1Pacman_a6d5dd3578085cca6d4c18a173926c805}} 
+\index{game::Pacman@{game::Pacman}!CheckCollision@{CheckCollision}}
+\index{CheckCollision@{CheckCollision}!game::Pacman@{game::Pacman}}
+\doxysubsubsection{\texorpdfstring{CheckCollision()}{CheckCollision()}}
+{\footnotesize\ttfamily bool game\+::\+Pacman\+::\+Check\+Collision (\begin{DoxyParamCaption}\item[{arcade\+::\+Inputs\+::input}]{input }\end{DoxyParamCaption})}
+
+
+
+check collision of the player 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & class input enum to get input type \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgame_1_1Pacman_a7459a729a854bd6220994c6474df72a1}\label{classgame_1_1Pacman_a7459a729a854bd6220994c6474df72a1}} 
+\index{game::Pacman@{game::Pacman}!CheckCollisionEnemy@{CheckCollisionEnemy}}
+\index{CheckCollisionEnemy@{CheckCollisionEnemy}!game::Pacman@{game::Pacman}}
+\doxysubsubsection{\texorpdfstring{CheckCollisionEnemy()}{CheckCollisionEnemy()}}
+{\footnotesize\ttfamily bool game\+::\+Pacman\+::\+Check\+Collision\+Enemy (\begin{DoxyParamCaption}\item[{char}]{c,  }\item[{long unsigned int}]{y }\end{DoxyParamCaption})}
+
+
+
+check collision of the phatom 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & character of the phantom within the map \\
+\hline
+{\em y} & iterator of the phantom place in the list \+\_\+asset \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgame_1_1Pacman_aacd887dfe7dd7e90f6ec65d5fc8be440}\label{classgame_1_1Pacman_aacd887dfe7dd7e90f6ec65d5fc8be440}} 
+\index{game::Pacman@{game::Pacman}!getcharacter@{getcharacter}}
+\index{getcharacter@{getcharacter}!game::Pacman@{game::Pacman}}
+\doxysubsubsection{\texorpdfstring{getcharacter()}{getcharacter()}}
+{\footnotesize\ttfamily std\+::tuple$<$ int, int $>$ game\+::\+Pacman\+::getcharacter (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+return the position of a character in the map 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & character to be found in the map \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgame_1_1Pacman_ada03ebf55dfba18f3ff271fe7c14c938}\label{classgame_1_1Pacman_ada03ebf55dfba18f3ff271fe7c14c938}} 
+\index{game::Pacman@{game::Pacman}!getInput@{getInput}}
+\index{getInput@{getInput}!game::Pacman@{game::Pacman}}
+\doxysubsubsection{\texorpdfstring{getInput()}{getInput()}}
+{\footnotesize\ttfamily void game\+::\+Pacman\+::get\+Input (\begin{DoxyParamCaption}\item[{const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classarcade_1_1Inputs}{arcade\+::\+Inputs}} $>$ \&}]{input }\end{DoxyParamCaption})}
+
+
+
+manage input of the game 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & class input \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgame_1_1Pacman_a30067ad11d2acec8e1342a258305f5ce}\label{classgame_1_1Pacman_a30067ad11d2acec8e1342a258305f5ce}} 
+\index{game::Pacman@{game::Pacman}!setlist@{setlist}}
+\index{setlist@{setlist}!game::Pacman@{game::Pacman}}
+\doxysubsubsection{\texorpdfstring{setlist()}{setlist()}}
+{\footnotesize\ttfamily void game\+::\+Pacman\+::setlist (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::tuple$<$ int, int $>$}]{pos,  }\item[{std\+::tuple$<$ int, int $>$}]{size,  }\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+
+
+add a new element in the list 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & name of the asset \\
+\hline
+{\em pos} & position of the asset \\
+\hline
+{\em size} & size of the asset \\
+\hline
+{\em path} & filepath of the asset \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+lib/\+Game/\+Pacman/\mbox{\hyperlink{pucman_8hpp}{pucman.\+hpp}}\item 
+lib/\+Game/\+Pacman/pucman.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,97 @@
+\hypertarget{classarcade_1_1IDisplay}{}\doxysection{arcade\+::IDisplay Class Reference}
+\label{classarcade_1_1IDisplay}\index{arcade::IDisplay@{arcade::IDisplay}}
+Inheritance diagram for arcade\+::IDisplay\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classarcade_1_1IDisplay}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classarcade_1_1IDisplay_ad92bcca1fb49c65e7e59ba59956d91c5}{init}} (int width, int height, const std\+::string \&name)=0
+\begin{DoxyCompactList}\small\item\em Create the window. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classarcade_1_1IDisplay_aafd596f1ee37c5f6af48cbb03e179be6}{Menu}} (const std\+::string \&lib\+Graph, const std\+::string \&lib\+Game)=0
+\begin{DoxyCompactList}\small\item\em Display main menu\textquotesingle{}s sprites. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classarcade_1_1IDisplay_a6ded7c641fbc579711904a9fb5fa449d}{Sprite\+Display}} (const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classarcade_1_1Assets}{arcade\+::\+Assets}} $>$$>$ \&assets)=0
+\begin{DoxyCompactList}\small\item\em Display game\textquotesingle{}s sprites. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1IDisplay_a6016a7a1aa5d7293e2f48d10f5a0958f}\label{classarcade_1_1IDisplay_a6016a7a1aa5d7293e2f48d10f5a0958f}} 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classarcade_1_1Inputs}{arcade\+::\+Inputs}} $>$ \mbox{\hyperlink{classarcade_1_1IDisplay_a6016a7a1aa5d7293e2f48d10f5a0958f}{event}} ()=0
+\begin{DoxyCompactList}\small\item\em Events handling. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1IDisplay_a43d9bd50b38caaebf3d92ab926336a4a}\label{classarcade_1_1IDisplay_a43d9bd50b38caaebf3d92ab926336a4a}} 
+virtual void \mbox{\hyperlink{classarcade_1_1IDisplay_a43d9bd50b38caaebf3d92ab926336a4a}{destroy\+Game}} ()=0
+\begin{DoxyCompactList}\small\item\em Destroy all components of actual game ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1IDisplay_a41472e2ba4a6d75d41787e76dbbdde63}\label{classarcade_1_1IDisplay_a41472e2ba4a6d75d41787e76dbbdde63}} 
+virtual void {\bfseries display} ()=0
+\item 
+\mbox{\Hypertarget{classarcade_1_1IDisplay_a978b84ff0e9dfbdfe90cd8a58951da42}\label{classarcade_1_1IDisplay_a978b84ff0e9dfbdfe90cd8a58951da42}} 
+virtual void {\bfseries clear} ()=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classarcade_1_1IDisplay_ad92bcca1fb49c65e7e59ba59956d91c5}\label{classarcade_1_1IDisplay_ad92bcca1fb49c65e7e59ba59956d91c5}} 
+\index{arcade::IDisplay@{arcade::IDisplay}!init@{init}}
+\index{init@{init}!arcade::IDisplay@{arcade::IDisplay}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily virtual void arcade\+::\+IDisplay\+::init (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Create the window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & window\textquotesingle{}s width \\
+\hline
+{\em height} & window\textquotesingle{}s height \\
+\hline
+{\em name} & window\textquotesingle{}s name \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classgraph_1_1SFML_ad28a5461468680b7db9c456e6a4d44d9}{graph\+::\+SFML}}, and \mbox{\hyperlink{classgraph_1_1SDL_a9426ce13f6c53575773dec6fd05c160f}{graph\+::\+SDL}}.
+
+\mbox{\Hypertarget{classarcade_1_1IDisplay_aafd596f1ee37c5f6af48cbb03e179be6}\label{classarcade_1_1IDisplay_aafd596f1ee37c5f6af48cbb03e179be6}} 
+\index{arcade::IDisplay@{arcade::IDisplay}!Menu@{Menu}}
+\index{Menu@{Menu}!arcade::IDisplay@{arcade::IDisplay}}
+\doxysubsubsection{\texorpdfstring{Menu()}{Menu()}}
+{\footnotesize\ttfamily virtual void arcade\+::\+IDisplay\+::\+Menu (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{lib\+Graph,  }\item[{const std\+::string \&}]{lib\+Game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Display main menu\textquotesingle{}s sprites. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lib\+Graph} & list of graph library name \\
+\hline
+{\em lib\+Game} & list of game library name \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classgraph_1_1SFML_a54b1726d1b75884d804073b198ec0039}{graph\+::\+SFML}}, and \mbox{\hyperlink{classgraph_1_1SDL_a054e4f98d1b7f23b5ce64220813cec63}{graph\+::\+SDL}}.
+
+\mbox{\Hypertarget{classarcade_1_1IDisplay_a6ded7c641fbc579711904a9fb5fa449d}\label{classarcade_1_1IDisplay_a6ded7c641fbc579711904a9fb5fa449d}} 
+\index{arcade::IDisplay@{arcade::IDisplay}!SpriteDisplay@{SpriteDisplay}}
+\index{SpriteDisplay@{SpriteDisplay}!arcade::IDisplay@{arcade::IDisplay}}
+\doxysubsubsection{\texorpdfstring{SpriteDisplay()}{SpriteDisplay()}}
+{\footnotesize\ttfamily virtual void arcade\+::\+IDisplay\+::\+Sprite\+Display (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classarcade_1_1Assets}{arcade\+::\+Assets}} $>$$>$ \&}]{assets }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Display game\textquotesingle{}s sprites. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em assets} & list of assets send by the game library \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\+Display/\mbox{\hyperlink{IDisplay_8hpp}{IDisplay.\+hpp}}\end{DoxyCompactItemize}

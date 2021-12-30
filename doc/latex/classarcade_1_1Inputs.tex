@@ -1,0 +1,53 @@
+\hypertarget{classarcade_1_1Inputs}{}\doxysection{arcade\+::Inputs Class Reference}
+\label{classarcade_1_1Inputs}\index{arcade::Inputs@{arcade::Inputs}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classarcade_1_1Inputs_a16f14e24dfc101a63c2aba8cf91c22a1}\label{classarcade_1_1Inputs_a16f14e24dfc101a63c2aba8cf91c22a1}} 
+enum class {\bfseries input} \{ \newline
+{\bfseries CLOSE}
+, {\bfseries RIGHT}
+, {\bfseries LEFT}
+, {\bfseries TOP}
+, \newline
+{\bfseries DOWN}
+, {\bfseries ENTER}
+, {\bfseries NONE}
+, {\bfseries INPUT}
+, \newline
+{\bfseries Q}
+, {\bfseries G}
+, {\bfseries V}
+, {\bfseries R}
+ \}
+\item 
+\mbox{\Hypertarget{classarcade_1_1Inputs_a0da243364b1290e1b8e540a6fabd463c}\label{classarcade_1_1Inputs_a0da243364b1290e1b8e540a6fabd463c}} 
+enum class {\bfseries type} \{ {\bfseries KEYBOARD}
+, {\bfseries MOUSE}
+, {\bfseries NONE}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classarcade_1_1Inputs_a2b0270b9b733d3435cb658a3a6b59302}\label{classarcade_1_1Inputs_a2b0270b9b733d3435cb658a3a6b59302}} 
+{\bfseries Inputs} (const arcade\+::\+Inputs\+::type \&type, const arcade\+::\+Inputs\+::input \&input=arcade\+::\+Inputs\+::input\+::\+NONE, const int xpos=-\/1, const int ypos=-\/1)
+\item 
+\mbox{\Hypertarget{classarcade_1_1Inputs_af1a474bea0c160ab071b198facd8898a}\label{classarcade_1_1Inputs_af1a474bea0c160ab071b198facd8898a}} 
+const input \& \mbox{\hyperlink{classarcade_1_1Inputs_af1a474bea0c160ab071b198facd8898a}{get\+Input}} ()
+\begin{DoxyCompactList}\small\item\em Return input. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1Inputs_a2cfee58c91a5f3d3403bd50af2053334}\label{classarcade_1_1Inputs_a2cfee58c91a5f3d3403bd50af2053334}} 
+const type \& \mbox{\hyperlink{classarcade_1_1Inputs_a2cfee58c91a5f3d3403bd50af2053334}{get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Return input\textquotesingle{}s type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1Inputs_aec3f484f160a4bad8c11daae02270f14}\label{classarcade_1_1Inputs_aec3f484f160a4bad8c11daae02270f14}} 
+const int \& \mbox{\hyperlink{classarcade_1_1Inputs_aec3f484f160a4bad8c11daae02270f14}{get\+XPos}} ()
+\begin{DoxyCompactList}\small\item\em Return input\textquotesingle{}s x position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1Inputs_af811f4e883fbae22293cdbc04672ea53}\label{classarcade_1_1Inputs_af811f4e883fbae22293cdbc04672ea53}} 
+const int \& \mbox{\hyperlink{classarcade_1_1Inputs_af811f4e883fbae22293cdbc04672ea53}{get\+YPos}} ()
+\begin{DoxyCompactList}\small\item\em Return input\textquotesingle{}s y postition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Inputs/\mbox{\hyperlink{Inputs_8hpp}{Inputs.\+hpp}}\item 
+src/\+Inputs/\mbox{\hyperlink{Inputs_8cpp}{Inputs.\+cpp}}\end{DoxyCompactItemize}

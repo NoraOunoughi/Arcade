@@ -1,0 +1,77 @@
+\hypertarget{classarcade_1_1Assets}{}\doxysection{arcade\+::Assets Class Reference}
+\label{classarcade_1_1Assets}\index{arcade::Assets@{arcade::Assets}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classarcade_1_1Assets_a3302f5c56e69490edd870ebf6dfaf789}\label{classarcade_1_1Assets_a3302f5c56e69490edd870ebf6dfaf789}} 
+enum {\bfseries Type} \{ {\bfseries drawable}
+, {\bfseries sound}
+, {\bfseries text}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classarcade_1_1Assets_a77ccab321887fee9eda077d8229e1c38}\label{classarcade_1_1Assets_a77ccab321887fee9eda077d8229e1c38}} 
+{\bfseries Assets} (std\+::string path, Type my\+\_\+tag)
+\item 
+\mbox{\Hypertarget{classarcade_1_1Assets_a762c451a41ced2d8cbf1ffa02d06bc1c}\label{classarcade_1_1Assets_a762c451a41ced2d8cbf1ffa02d06bc1c}} 
+{\bfseries Assets} (Type my\+\_\+tag)
+\item 
+\mbox{\Hypertarget{classarcade_1_1Assets_a009ab838a6f93e36577f83205a1deaa8}\label{classarcade_1_1Assets_a009ab838a6f93e36577f83205a1deaa8}} 
+std\+::string {\bfseries Get\+File\+Path} () const
+\item 
+\mbox{\Hypertarget{classarcade_1_1Assets_ab119a67c88e15e5f581d3c963c11d647}\label{classarcade_1_1Assets_ab119a67c88e15e5f581d3c963c11d647}} 
+Type {\bfseries get\+Tag} () const
+\item 
+\mbox{\Hypertarget{classarcade_1_1Assets_aac6845f01887aba5449a1f8afeb75513}\label{classarcade_1_1Assets_aac6845f01887aba5449a1f8afeb75513}} 
+void {\bfseries set\+Filepath} (const std\+::string \&path)
+\item 
+\mbox{\Hypertarget{classarcade_1_1Assets_aae845e5f3e73a8b6be26c32857f6ec0a}\label{classarcade_1_1Assets_aae845e5f3e73a8b6be26c32857f6ec0a}} 
+void {\bfseries new\+Tag} (const Type \&my\+\_\+tag)
+\item 
+\mbox{\Hypertarget{classarcade_1_1Assets_a82b10b08702cbb6a3a754361947682db}\label{classarcade_1_1Assets_a82b10b08702cbb6a3a754361947682db}} 
+virtual void {\bfseries set\+Position} (const std\+::tuple$<$ int, int $>$ \&i)
+\item 
+\mbox{\Hypertarget{classarcade_1_1Assets_a4560b0661b518b75c48115f9de17360f}\label{classarcade_1_1Assets_a4560b0661b518b75c48115f9de17360f}} 
+virtual std\+::tuple$<$ int, int $>$ {\bfseries get\+Size} () const
+\item 
+\mbox{\Hypertarget{classarcade_1_1Assets_a82e333845ef6ef512d6cc4dc11f17c74}\label{classarcade_1_1Assets_a82e333845ef6ef512d6cc4dc11f17c74}} 
+virtual bool {\bfseries get\+Collision} () const
+\item 
+\mbox{\Hypertarget{classarcade_1_1Assets_a42b70003a7d038db14ad4adf29434000}\label{classarcade_1_1Assets_a42b70003a7d038db14ad4adf29434000}} 
+virtual std\+::string {\bfseries get\+Text} () const
+\item 
+\mbox{\Hypertarget{classarcade_1_1Assets_ae6165155272ab40fbffd58616c5249b2}\label{classarcade_1_1Assets_ae6165155272ab40fbffd58616c5249b2}} 
+virtual std\+::tuple$<$ int,int $>$ {\bfseries get\+Position} () const
+\item 
+\mbox{\Hypertarget{classarcade_1_1Assets_a986d9ab19faca0e364ae792bbfda134b}\label{classarcade_1_1Assets_a986d9ab19faca0e364ae792bbfda134b}} 
+virtual std\+::tuple$<$ int, int $>$ {\bfseries get\+Direction} () const
+\item 
+\mbox{\Hypertarget{classarcade_1_1Assets_a62a0f8131b47256e78dfa33983638ea1}\label{classarcade_1_1Assets_a62a0f8131b47256e78dfa33983638ea1}} 
+virtual int {\bfseries get\+Life} () const
+\item 
+\mbox{\Hypertarget{classarcade_1_1Assets_a6abecf9a38024faec941d9c0e7e64f0e}\label{classarcade_1_1Assets_a6abecf9a38024faec941d9c0e7e64f0e}} 
+virtual std\+::tuple$<$ int, int $>$ {\bfseries get\+Text\+Position} () const
+\item 
+\mbox{\Hypertarget{classarcade_1_1Assets_a1d432eced3c671375b29af04c7568699}\label{classarcade_1_1Assets_a1d432eced3c671375b29af04c7568699}} 
+virtual int {\bfseries get\+Score} () const
+\item 
+\mbox{\Hypertarget{classarcade_1_1Assets_a33e340148d1e3062d28c4fa39d4fa114}\label{classarcade_1_1Assets_a33e340148d1e3062d28c4fa39d4fa114}} 
+virtual bool {\bfseries get\+Loop} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classarcade_1_1Assets_a301dc8c47ddf2b196e9ab9adec153eec}\label{classarcade_1_1Assets_a301dc8c47ddf2b196e9ab9adec153eec}} 
+std\+::string {\bfseries \+\_\+path}
+\item 
+\mbox{\Hypertarget{classarcade_1_1Assets_aacb92ee866b771c22d97fc2e40e67cb2}\label{classarcade_1_1Assets_aacb92ee866b771c22d97fc2e40e67cb2}} 
+enum Type {\bfseries \+\_\+stat}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Assets/\mbox{\hyperlink{Assets_8hpp}{Assets.\+hpp}}\item 
+src/\+Assets/\mbox{\hyperlink{Assets_8cpp}{Assets.\+cpp}}\end{DoxyCompactItemize}

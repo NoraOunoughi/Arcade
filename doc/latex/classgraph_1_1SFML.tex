@@ -1,0 +1,84 @@
+\hypertarget{classgraph_1_1SFML}{}\doxysection{graph\+::SFML Class Reference}
+\label{classgraph_1_1SFML}\index{graph::SFML@{graph::SFML}}
+Inheritance diagram for graph\+::SFML\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgraph_1_1SFML}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classgraph_1_1SFML_ad28a5461468680b7db9c456e6a4d44d9}{init}} (int width, int height, const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Create the window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgraph_1_1SFML_a54b1726d1b75884d804073b198ec0039}{Menu}} (const std\+::string \&lib\+Graph, const std\+::string \&lib\+Game)
+\begin{DoxyCompactList}\small\item\em Display main menu\textquotesingle{}s sprites. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgraph_1_1SFML_a23ccb815354e0d784c0753a56a4b98d4}\label{classgraph_1_1SFML_a23ccb815354e0d784c0753a56a4b98d4}} 
+void {\bfseries Sprite\+Display} (const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classarcade_1_1Assets}{arcade\+::\+Assets}} $>$$>$ \&assets)
+\item 
+\mbox{\Hypertarget{classgraph_1_1SFML_a09200c0f8575111c1de33206c7eceec2}\label{classgraph_1_1SFML_a09200c0f8575111c1de33206c7eceec2}} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classarcade_1_1Inputs}{arcade\+::\+Inputs}} $>$ \mbox{\hyperlink{classgraph_1_1SFML_a09200c0f8575111c1de33206c7eceec2}{event}} ()
+\begin{DoxyCompactList}\small\item\em Events handling. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgraph_1_1SFML_a68117dc3b6eb32c9fd7fb134464fc84f}\label{classgraph_1_1SFML_a68117dc3b6eb32c9fd7fb134464fc84f}} 
+void \mbox{\hyperlink{classgraph_1_1SFML_a68117dc3b6eb32c9fd7fb134464fc84f}{destroy\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Destroy all components of actual game ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgraph_1_1SFML_abe8fc04bfdb9e447e261795a3b9e0804}\label{classgraph_1_1SFML_abe8fc04bfdb9e447e261795a3b9e0804}} 
+void {\bfseries display} ()
+\item 
+\mbox{\Hypertarget{classgraph_1_1SFML_ab8b4d6e5888cd52eac42dc2220ea082b}\label{classgraph_1_1SFML_ab8b4d6e5888cd52eac42dc2220ea082b}} 
+void {\bfseries clear} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgraph_1_1SFML_ad28a5461468680b7db9c456e6a4d44d9}\label{classgraph_1_1SFML_ad28a5461468680b7db9c456e6a4d44d9}} 
+\index{graph::SFML@{graph::SFML}!init@{init}}
+\index{init@{init}!graph::SFML@{graph::SFML}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void graph\+::\+SFML\+::init (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Create the window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & window\textquotesingle{}s width \\
+\hline
+{\em height} & window\textquotesingle{}s height \\
+\hline
+{\em name} & window\textquotesingle{}s name \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IDisplay_ad92bcca1fb49c65e7e59ba59956d91c5}{arcade\+::\+IDisplay}}.
+
+\mbox{\Hypertarget{classgraph_1_1SFML_a54b1726d1b75884d804073b198ec0039}\label{classgraph_1_1SFML_a54b1726d1b75884d804073b198ec0039}} 
+\index{graph::SFML@{graph::SFML}!Menu@{Menu}}
+\index{Menu@{Menu}!graph::SFML@{graph::SFML}}
+\doxysubsubsection{\texorpdfstring{Menu()}{Menu()}}
+{\footnotesize\ttfamily void graph\+::\+SFML\+::\+Menu (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{lib\+Graph,  }\item[{const std\+::string \&}]{lib\+Game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Display main menu\textquotesingle{}s sprites. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lib\+Graph} & list of graph library name \\
+\hline
+{\em lib\+Game} & list of game library name \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IDisplay_aafd596f1ee37c5f6af48cbb03e179be6}{arcade\+::\+IDisplay}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+lib/\+Display/\+SFML/\mbox{\hyperlink{SFML_8hpp}{SFML.\+hpp}}\item 
+lib/\+Display/\+SFML/\mbox{\hyperlink{SFML_8cpp}{SFML.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,141 @@
+\hypertarget{classgraph_1_1SDL}{}\doxysection{graph\+::SDL Class Reference}
+\label{classgraph_1_1SDL}\index{graph::SDL@{graph::SDL}}
+Inheritance diagram for graph\+::SDL\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgraph_1_1SDL}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgraph_1_1SDL_a9426ce13f6c53575773dec6fd05c160f}\label{classgraph_1_1SDL_a9426ce13f6c53575773dec6fd05c160f}} 
+void \mbox{\hyperlink{classgraph_1_1SDL_a9426ce13f6c53575773dec6fd05c160f}{init}} (int width, int height, const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em initialize all resources needed for the game \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgraph_1_1SDL_a054e4f98d1b7f23b5ce64220813cec63}{Menu}} (const std\+::string \&lib\+Graph, const std\+::string \&lib\+Game)
+\begin{DoxyCompactList}\small\item\em displays the main menu \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgraph_1_1SDL_a5f4c3112ea542e71145ed16525738999}{Sprite\+Display}} (const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classarcade_1_1Assets}{arcade\+::\+Assets}} $>$$>$ \&assets)
+\begin{DoxyCompactList}\small\item\em display all our sprites \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{classgraph_1_1SDL_a181afe0b68ea85651c970ad1db21134d}{Sprite\+Create}} (const std\+::string \&path, std\+::tuple$<$ int, int $>$ position, std\+::tuple$<$ int, int $>$ size)
+\begin{DoxyCompactList}\small\item\em create a \mbox{\hyperlink{classgraph_1_1SDL}{SDL}} texture to draw \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{classgraph_1_1SDL_a14624c2576c438c39098eed860402310}{Text\+Create}} (const std\+::string \&name, const int size, const int x, const int y, SDL\+\_\+\+Color color)
+\begin{DoxyCompactList}\small\item\em create a \mbox{\hyperlink{classgraph_1_1SDL}{SDL}} texture to draw text \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgraph_1_1SDL_a60a8d2622114288a0e2088294bab5621}{destroy\+Texture}} (SDL\+\_\+\+Texture $\ast$texture)
+\begin{DoxyCompactList}\small\item\em destroy a texture \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgraph_1_1SDL_a6339e448aeb2da8cea7b26e1f38e8036}\label{classgraph_1_1SDL_a6339e448aeb2da8cea7b26e1f38e8036}} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classarcade_1_1Inputs}{arcade\+::\+Inputs}} $>$ \mbox{\hyperlink{classgraph_1_1SDL_a6339e448aeb2da8cea7b26e1f38e8036}{event}} ()
+\begin{DoxyCompactList}\small\item\em handles all events happening in the window \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgraph_1_1SDL_a13ee45e8715a51057ee93305433b9904}\label{classgraph_1_1SDL_a13ee45e8715a51057ee93305433b9904}} 
+void \mbox{\hyperlink{classgraph_1_1SDL_a13ee45e8715a51057ee93305433b9904}{destroy\+Game}} ()
+\begin{DoxyCompactList}\small\item\em destroy resources of the game \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgraph_1_1SDL_aba45b74a43a239d7c27499b41ea1e00d}\label{classgraph_1_1SDL_aba45b74a43a239d7c27499b41ea1e00d}} 
+void \mbox{\hyperlink{classgraph_1_1SDL_aba45b74a43a239d7c27499b41ea1e00d}{display}} ()
+\begin{DoxyCompactList}\small\item\em display the window \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgraph_1_1SDL_a9297ba6c9ca019fe4308aa68a78ae89b}\label{classgraph_1_1SDL_a9297ba6c9ca019fe4308aa68a78ae89b}} 
+void \mbox{\hyperlink{classgraph_1_1SDL_a9297ba6c9ca019fe4308aa68a78ae89b}{clear}} ()
+\begin{DoxyCompactList}\small\item\em clear the window \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgraph_1_1SDL_a900b4ac9eaa1c82537a2be99e5e86318}\label{classgraph_1_1SDL_a900b4ac9eaa1c82537a2be99e5e86318}} 
+SDL\+\_\+\+Texture $\ast$ {\bfseries Score\+Create} (int score)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgraph_1_1SDL_a60a8d2622114288a0e2088294bab5621}\label{classgraph_1_1SDL_a60a8d2622114288a0e2088294bab5621}} 
+\index{graph::SDL@{graph::SDL}!destroyTexture@{destroyTexture}}
+\index{destroyTexture@{destroyTexture}!graph::SDL@{graph::SDL}}
+\doxysubsubsection{\texorpdfstring{destroyTexture()}{destroyTexture()}}
+{\footnotesize\ttfamily void graph\+::\+SDL\+::destroy\+Texture (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Texture $\ast$}]{texture }\end{DoxyParamCaption})}
+
+
+
+destroy a texture 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & a texture to destroy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgraph_1_1SDL_a054e4f98d1b7f23b5ce64220813cec63}\label{classgraph_1_1SDL_a054e4f98d1b7f23b5ce64220813cec63}} 
+\index{graph::SDL@{graph::SDL}!Menu@{Menu}}
+\index{Menu@{Menu}!graph::SDL@{graph::SDL}}
+\doxysubsubsection{\texorpdfstring{Menu()}{Menu()}}
+{\footnotesize\ttfamily void graph\+::\+SDL\+::\+Menu (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{lib\+Graph,  }\item[{const std\+::string \&}]{lib\+Game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+displays the main menu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lib\+Graph} & graph library used \\
+\hline
+{\em lib\+Game} & game library used \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IDisplay_aafd596f1ee37c5f6af48cbb03e179be6}{arcade\+::\+IDisplay}}.
+
+\mbox{\Hypertarget{classgraph_1_1SDL_a181afe0b68ea85651c970ad1db21134d}\label{classgraph_1_1SDL_a181afe0b68ea85651c970ad1db21134d}} 
+\index{graph::SDL@{graph::SDL}!SpriteCreate@{SpriteCreate}}
+\index{SpriteCreate@{SpriteCreate}!graph::SDL@{graph::SDL}}
+\doxysubsubsection{\texorpdfstring{SpriteCreate()}{SpriteCreate()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture $\ast$ graph\+::\+SDL\+::\+Sprite\+Create (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path,  }\item[{std\+::tuple$<$ int, int $>$}]{position,  }\item[{std\+::tuple$<$ int, int $>$}]{size }\end{DoxyParamCaption})}
+
+
+
+create a \mbox{\hyperlink{classgraph_1_1SDL}{SDL}} texture to draw 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & path to the source file of the sprite \\
+\hline
+{\em position} & position in which we draw our sprite \\
+\hline
+{\em size} & size of the sprite \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgraph_1_1SDL_a5f4c3112ea542e71145ed16525738999}\label{classgraph_1_1SDL_a5f4c3112ea542e71145ed16525738999}} 
+\index{graph::SDL@{graph::SDL}!SpriteDisplay@{SpriteDisplay}}
+\index{SpriteDisplay@{SpriteDisplay}!graph::SDL@{graph::SDL}}
+\doxysubsubsection{\texorpdfstring{SpriteDisplay()}{SpriteDisplay()}}
+{\footnotesize\ttfamily void graph\+::\+SDL\+::\+Sprite\+Display (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classarcade_1_1Assets}{arcade\+::\+Assets}} $>$$>$ \&}]{assets }\end{DoxyParamCaption})}
+
+
+
+display all our sprites 
+
+
+\begin{DoxyParams}{Parameters}
+{\em assets} & vector of all our assets to draw \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgraph_1_1SDL_a14624c2576c438c39098eed860402310}\label{classgraph_1_1SDL_a14624c2576c438c39098eed860402310}} 
+\index{graph::SDL@{graph::SDL}!TextCreate@{TextCreate}}
+\index{TextCreate@{TextCreate}!graph::SDL@{graph::SDL}}
+\doxysubsubsection{\texorpdfstring{TextCreate()}{TextCreate()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture $\ast$ graph\+::\+SDL\+::\+Text\+Create (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const int}]{size,  }\item[{const int}]{x,  }\item[{const int}]{y,  }\item[{SDL\+\_\+\+Color}]{color }\end{DoxyParamCaption})}
+
+
+
+create a \mbox{\hyperlink{classgraph_1_1SDL}{SDL}} texture to draw text 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & path to the font to use \\
+\hline
+{\em size} & size of the text \\
+\hline
+{\em x} & x position of the text \\
+\hline
+{\em y} & y position of the text \\
+\hline
+{\em color} & color of the text \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+lib/\+Display/\+SDL/\mbox{\hyperlink{SDL_8hpp}{SDL.\+hpp}}\item 
+lib/\+Display/\+SDL/SDL.\+cpp\end{DoxyCompactItemize}
